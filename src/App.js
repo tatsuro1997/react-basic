@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Article from "./components/Article";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Reactを学ぼう
-        </a>
-      </header>
+    <div>
+      <Article
+        title={'タイトル'}
+        content={'コンテンツ'}
+      />
+      <Article
+        title={'テスト'}
+        content={'コンテンツ'}
+      />
+      <Article
+        title={'再利用可能'}
+        content={'コンテンツ'}
+      />
     </div>
   );
-}
+};
 
 export default App;
